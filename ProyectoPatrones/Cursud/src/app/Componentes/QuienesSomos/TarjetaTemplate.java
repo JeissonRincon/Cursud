@@ -35,7 +35,7 @@ public class TarjetaTemplate extends JPanel{
             iImage.getImage().getScaledInstance(120, 120, Image.SCALE_AREA_AVERAGING)
         );
         
-        lImagen=sObjGraficos.construirJLabel(null, 15, 15, 90, 90, iAux,
+        lImagen=sObjGraficos.construirJLabel(null, 5, 5, 110, 110, iAux,
                 null, null, null, "c");
         this.add(lImagen);
         

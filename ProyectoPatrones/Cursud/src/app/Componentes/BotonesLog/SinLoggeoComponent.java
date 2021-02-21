@@ -3,6 +3,7 @@ package app.Componentes.BotonesLog;
 
 import app.Componentes.Loggeo.LoginComponent;
 import app.Componentes.Registro.RegistroComponent;
+import app.Controlador;
 import app.VistaPrincipal.VistaPrincipalComponent;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -17,11 +18,14 @@ public class SinLoggeoComponent implements ActionListener{
     private VistaPrincipalComponent vistaPrincipalComponent;
     private RegistroComponent registroComponent;
     private LoginComponent loginComponent;
+    private Controlador controlador;
     
-    public SinLoggeoComponent(VistaPrincipalComponent vistaPrincipalComponent){
+    
+    public SinLoggeoComponent(VistaPrincipalComponent vistaPrincipalComponent, Controlador controlador){
     
         this.sinLoggeoTemplate=new SinLoggeoTemplate(this);
         this.vistaPrincipalComponent=vistaPrincipalComponent;
+        this.controlador=controlador;
     }
 
     public SinLoggeoTemplate getSinLoggeoTemplate() {
@@ -32,10 +36,9 @@ public class SinLoggeoComponent implements ActionListener{
     public void actionPerformed(ActionEvent e) {
         
         if(e.getSource()==sinLoggeoTemplate.getbLoggeo()){
-            vistaPrincipalComponent.mostrarComponentes("Con Loggeo");
             
             if(loginComponent==null){
-                this.loginComponent=new LoginComponent(vistaPrincipalComponent);
+                this.loginComponent=new LoginComponent(vistaPrincipalComponent,controlador);
             }
             else{
                 this.loginComponent.getLoginTemplate().setVisible(true);
@@ -45,7 +48,7 @@ public class SinLoggeoComponent implements ActionListener{
         
         if(e.getSource()==sinLoggeoTemplate.getbRegistro()){
             if(registroComponent==null){
-                this.registroComponent=new RegistroComponent(vistaPrincipalComponent);
+                this.registroComponent=new RegistroComponent(vistaPrincipalComponent,controlador);
             }else{
                 this.registroComponent.getRegistroTemplate().setVisible(true);
             }

@@ -21,7 +21,7 @@ public class RegistroTemplate extends JFrame{
     
     private JButton bRegistrar, bVolver;
     
-    private JLabel lNombre, lApellido, lUsuario, lContra, lContra2;
+    private JLabel lNombre, lApellido, lUsuario, lContra, lContra2, lMensaje;
     
     private JTextField tNombre, tApellido, tUsuario, tContra, tContra2;
      
@@ -105,6 +105,14 @@ public class RegistroTemplate extends JFrame{
                 Color.black, null, sRecursos.getFontLogeo(), "l");
         this.add(lContra);
         
+        lContra2=sObjetosGraficos.construirJLabel("CONFIRMAR", 20, 200, 100, 30, null
+                , Color.black, null, sRecursos.getFontLogeo(), "l");
+        this.add(lContra2);
+        
+        lMensaje=sObjetosGraficos.construirJLabel(null, 20, 240, 200, 30, null,
+                Color.red, null, sRecursos.getFontLogeo(), "c");
+        this.add(lMensaje);
+        
     }
 
     public JButton getbRegistrar() {
@@ -134,6 +142,11 @@ public class RegistroTemplate extends JFrame{
     public JTextField gettContra2() {
         return tContra2;
     }
+
+    public JLabel getlMensaje() {
+        return lMensaje;
+    }
+    
     
     
 }

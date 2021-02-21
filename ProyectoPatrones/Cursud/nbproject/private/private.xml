@@ -3,12 +3,10 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/Jeisson/Documents/NetBeansProjects/Cursud/src/app/Componentes/Loggeo/LoginComponent.java</file>
-            <file>file:/C:/Users/Jeisson/Documents/NetBeansProjects/Cursud/src/app/Componentes/Loggeo/LoginTemplate.java</file>
-            <file>file:/C:/Users/Jeisson/Documents/NetBeansProjects/Cursud/src/app/Componentes/BotonesLog/ConLoggeoTemplate.java</file>
-            <file>file:/C:/Users/Jeisson/Documents/NetBeansProjects/Cursud/src/app/Componentes/BotonesLog/SinLoggeoComponent.java</file>
-            <file>file:/C:/Users/Jeisson/Documents/NetBeansProjects/Cursud/src/app/Componentes/Registro/RegistroTemplate.java</file>
-            <file>file:/C:/Users/Jeisson/Documents/NetBeansProjects/Cursud/src/app/Componentes/Registro/RegistroComponent.java</file>
+            <file>file:/C:/Users/Jeisson/Documents/NetBeansProjects/Cursud/src/app/VistaPrincipal/VistaPrincipalTemplate.java</file>
+            <file>file:/C:/Users/Jeisson/Documents/NetBeansProjects/Cursud/src/app/Componentes/Cursos/CursosComponent.java</file>
+            <file>file:/C:/Users/Jeisson/Documents/NetBeansProjects/Cursud/src/app/Componentes/Cursos/CursosTemplate.java</file>
+            <file>file:/C:/Users/Jeisson/Documents/NetBeansProjects/Cursud/src/app/Componentes/QuienesSomos/TarjetaComponent.java</file>
         </group>
     </open-files>
 </project-private>

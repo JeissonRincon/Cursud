@@ -16,7 +16,7 @@ public class RecursosService {
             fontLetrero,fontDescripcion,fontNameAnime,fontLogeo;
     private Cursor cMano;
     private Border borderInferiorNegro,borderGris,borderInferiorAzul,borderInferiorGris,borderEpi;
-    private ImageIcon iCursud;
+    private ImageIcon iCursud, iCurso;
     
     static private RecursosService servicio;
     
@@ -38,6 +38,7 @@ public class RecursosService {
         fontDescripcion = new Font("Georgia",Font.PLAIN,10);
         fontNameAnime = new Font("Georgia",Font.BOLD,14);
         iCursud = new ImageIcon("recursos/logoCursud.png");
+        iCurso = new ImageIcon("recursos/Cursos/Funciones.png");
         borderInferiorNegro = BorderFactory.createMatteBorder(0, 0, 2, 0, colorNegro);
         borderInferiorAzul = BorderFactory.createMatteBorder(0, 0, 2, 0, colorAzul);
         borderInferiorGris = BorderFactory.createMatteBorder(0, 0, 2, 0, colorGris);
@@ -142,6 +143,12 @@ public class RecursosService {
     public ImageIcon getiCursud() {
         return iCursud;
     }
+
+    public ImageIcon getiCurso() {
+        return iCurso;
+    }
+    
+    
 
     
      public static RecursosService getService(){
