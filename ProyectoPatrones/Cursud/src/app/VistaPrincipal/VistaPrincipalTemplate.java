@@ -53,6 +53,8 @@ public class VistaPrincipalTemplate extends JFrame{
         
         sRecursos = RecursosService.getService();
         sObjetosGraficos = ObjetosGraficosService.getService();
+        this.vistaPrincipalComponent=vistaPrincipalComponent;
+        this.vistaPrincipalComponent.getClass();
         
         this.crearDecoracion();
         this.crearPaneles();

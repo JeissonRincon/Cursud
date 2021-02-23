@@ -69,6 +69,7 @@ public class OfertasTemplate extends JPanel{
         this.setBorder(sRecursos.getBorderInferiorGris());
         this.setLayout(null);
         this.setVisible(true);
+        
     }
 
     public JButton getbIr() {

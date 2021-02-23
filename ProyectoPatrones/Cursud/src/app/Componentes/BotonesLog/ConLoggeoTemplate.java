@@ -45,6 +45,7 @@ public class ConLoggeoTemplate extends JPanel{
     
         bMisCursos = sObjG.construirJButton("Mis Cursos", 10, 10, 85, 30,sRecursos.getcMano()
                 , null, sRecursos.getFontIniciarSesion(), sRecursos.getColorVerdoso(), sRecursos.getColorNegro(), sRecursos.getBorderGris(), "c", true);
+        bMisCursos.addActionListener(conLoggeoComponent);
         this.add(bMisCursos);
         
         bDesLoggeo = sObjG.construirJButton("Log out", 100, 10, 70, 30,sRecursos.getcMano()

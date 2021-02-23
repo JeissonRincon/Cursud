@@ -50,7 +50,7 @@ public class RegistroComponent implements ActionListener{
                             registroTemplate.gettUsuario().getText(),
                             registroTemplate.gettContra().getText());
                     
-                    if(usuRegistrado=true){
+                    if(usuRegistrado==true){
                         
                         this.vistaPrincipalComponent.getVistaPrincipalTemplate().setVisible(true);
                         if(anuncio==null){

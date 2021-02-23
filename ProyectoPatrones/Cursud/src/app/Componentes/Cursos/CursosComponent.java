@@ -22,7 +22,7 @@ public class CursosComponent implements ActionListener{
     
     public CursosComponent(VistaPrincipalComponent vistaPrincipalComponent, int y, String nombre, String descripcion, int precio, ImageIcon dibujo,Controlador controlador){
         
-        cursosTemplate = new CursosTemplate(this,y,nombre,descripcion,precio,dibujo);
+        cursosTemplate = new CursosTemplate(this,y*100,nombre,descripcion,precio,dibujo);
         this.vistaPrincipalComponent=vistaPrincipalComponent;
         this.controlador=controlador;
     

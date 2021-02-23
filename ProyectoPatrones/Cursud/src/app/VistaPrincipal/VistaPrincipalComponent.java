@@ -75,7 +75,7 @@ public class VistaPrincipalComponent implements ActionListener{
                 .getCursosTemplate());
         
         vistaPrincipalTemplate.getCursero().setPreferredSize(new Dimension(350,((i+1)*100)));
-        
+        vistaPrincipalTemplate.repaint();
         
         
     }
@@ -84,10 +84,10 @@ public class VistaPrincipalComponent implements ActionListener{
         
         iAux = new ImageIcon(dirImagen);
     
-        vistaPrincipalTemplate.getpListOfertas().add(new OfertasComponent(i,nombre,descuento,iAux)
+        vistaPrincipalTemplate.getpListOfertas().add(new OfertasComponent(i,nombre,descuento,iAux,controlador)
                 .getOfertasTemplate());
         vistaPrincipalTemplate.getpListOfertas().setPreferredSize(new Dimension(195,((i+1)*70)));
-        
+        vistaPrincipalTemplate.repaint();
     }
 
     public VistaPrincipalTemplate getVistaPrincipalTemplate() {

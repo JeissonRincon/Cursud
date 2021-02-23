@@ -15,10 +15,10 @@ public class OfertasComponent implements ActionListener{
     private OfertasTemplate ofertasTemplate;
     private Controlador control;
     
-    public OfertasComponent(int y, String nombre, int oferta, ImageIcon dibujo){
+    public OfertasComponent(int y, String nombre, int oferta, ImageIcon dibujo, Controlador controlador){
     
-        this.ofertasTemplate=new OfertasTemplate(this,y,nombre,oferta,dibujo);
-        control= new Controlador();
+        this.ofertasTemplate=new OfertasTemplate(this,y*70,nombre,oferta,dibujo);
+        this.control=controlador;
     }
 
     public OfertasTemplate getOfertasTemplate() {

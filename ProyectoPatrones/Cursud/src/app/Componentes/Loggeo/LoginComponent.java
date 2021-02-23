@@ -51,7 +51,7 @@ public class LoginComponent implements ActionListener{
                 usuValido=control.ValidarLogin(loginTemplate.gettUsuario().getText(), 
                         loginTemplate.gettContra().getText());
                 
-                if(usuValido=true){
+                if(usuValido==true){
                     vistaPrincipalComponent.mostrarComponentes("Con Loggeo");
                     vistaPrincipalComponent.getVistaPrincipalTemplate().getlUsuario().setText(loginTemplate.gettUsuario().getText());
                     if(vistaPrincipalComponent==null){
