@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ====================================================================== 
+     Entregable -Sandro-                                                               
+     ====================================================================== -->
+<project name="1.  Despliegue !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!" default="Crear Entregable">
+    <description> Genera el jar del Despliegue </description>
+	<!-- variables -->
+	<property name="origen_despliegue" location="C:\Users\TOSHIBA\eclipse-workspace\workspace"/>
+	<!-- desplegar -->
+    <target name="Crear Entregable" description="crea el Entregable"> 
+    	<ant antfile="${origen_despliegue}\Cursud\build_cursud.xml" />
+    	<ant antfile="${origen_despliegue}\api\build_api.xml" />
+    	<ant antfile="${origen_despliegue}\Comunicacion\build_comunicacion.xml" />
+    	<ant antfile="${origen_despliegue}\ComunidadAcademica\build_comunidadAcademica.xml" />
+        <ant antfile="${origen_despliegue}\Cursos\cursos.xml" />
+    	<ant antfile="${origen_despliegue}\InterfazComunidad\build_interfazComunidad.xml" />
+    	<ant antfile="${origen_despliegue}\Pagos\build_pagos.xml" />
+    	<ant antfile="${origen_despliegue}\Promocion\build_promocion.xml" />
+    	<ant antfile="${origen_despliegue}\likeCursos\cursoslike.xml" />
+    </target>
+</project>

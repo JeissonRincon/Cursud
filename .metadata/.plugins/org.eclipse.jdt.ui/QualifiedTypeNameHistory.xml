@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="javax.swing.JOptionPane"/>
+<fullyQualifiedTypeName name="com.principal.Orquestador"/>
+<fullyQualifiedTypeName name="com.utilidades.Cargador"/>
+<fullyQualifiedTypeName name="com.core.IEntrada"/>
+<fullyQualifiedTypeName name="com.cableado.ISalida"/>
+<fullyQualifiedTypeName name="comportamineto.cadena.Manejador"/>
+<fullyQualifiedTypeName name="comportamineto.cadena.ManejadorA"/>
+<fullyQualifiedTypeName name="comportamineto.cadena.ManejadorB"/>
+<fullyQualifiedTypeName name="patrones.cadena.ACaso"/>
+<fullyQualifiedTypeName name="patrones.cadena.ISolucion"/>
+</qualifiedTypeNameHistroy>

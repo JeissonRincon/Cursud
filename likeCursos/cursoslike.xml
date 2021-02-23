@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- =======================cursos -Sandro-================================ -->
+<project name="1.2 cursos" default="Crear cursoslike.jar">
+    <description> Genera el jar del cursos </description>
+	<!-- variables -->
+	<property name="base_cursos" location="C:\Users\TOSHIBA\eclipse-workspace\workspace\likeCursos"/>
+	<property name="destino_cursos" location="C:\Users\TOSHIBA\eclipse-workspace\workspace\Cursud\back\cursosLike.jar"/>
+	<!--   corear   -->
+    <target name="Crear cursoslike.jar" description="crea el cursoslike.jar">
+    	 <jar destfile="${destino_cursos}"  basedir="${base_cursos}\bin" manifest="${base_cursos}\MANIFEST.MF"/>       
+    </target>
+</project>
+

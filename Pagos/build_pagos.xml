@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- =======================pagos -Sandro-================================ -->
+<project name="1.2 pagos" default="Crear pagos.jar">
+    <description> Genera el jar del pagos </description>
+	<!-- variables -->
+	<property name="base_pagos" location="C:\Users\TOSHIBA\eclipse-workspace\workspace\Pagos"/>
+	<property name="destino_pagos" location="C:\Users\TOSHIBA\eclipse-workspace\workspace\Cursud\back\pagos.jar"/>
+	<!--   corear   -->
+    <target name="Crear pagos.jar" description="crea el pagos.jar">
+    	 <jar destfile="${destino_pagos}"  basedir="${base_pagos}\bin" manifest="${base_pagos}\MANIFEST.MF"/>       
+    </target>
+</project>
+

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ====================================================================== 
+     Entregable -Sandro-                                                               
+     ====================================================================== -->
+<project name="2.  Entregable !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!" default="Crear Entregable">
+    <description> Genera el jar del Despliegue </description>
+	<!-- variables -->
+	<property name="origen_despliegue" location="d:/eclipse/workspace"/>
+	<property name="destino_entregable" location="c:/aplicacion"/>
+	<!-- entregar -->
+    <target name="Crear Entregable" description="crea el Entregable"> 
+        <!-- desplegar -->
+    	<ant antfile="${origen_despliegue}\orquestador\build_orquestador.xml" />
+    	<!-- copiar -->
+     	<copy todir="${destino_entregable}"><fileset dir="." excludes="*/*,*.xml" includes="*.jar,*.html,*.bat,*.ico,*.txt"/></copy>
+    	<copy todir="${destino_entregable}/api"><fileset dir="api"/></copy>
+    	<copy todir="${destino_entregable}/back"><fileset dir="back"/></copy>
+    	<copy todir="${destino_entregable}/front"><fileset dir="front"/></copy>    	
+    </target>
+</project>

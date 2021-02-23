@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- =======================Orquestador -Sandro-========================== -->
+<project name="1.4 Orquestador" default="Crear orquestador.jar">
+    <description> Genera el jar del Orquestador </description>
+	<!-- variables -->
+	<property name="dir_api" location="D:\eclipseA\workspace\api\bin"/>
+	<property name="base_orquestador" location="D:\eclipseA\workspace\orquestador\bin"/>
+	<!-- orquestar -->
+    <target name="Crear orquestador.jar" description="crea el orquestador.jar">
+    	<jar destfile="orquestador.jar"  basedir="${base_orquestador}">
+        <fileset dir="${dir_api}"/>
+            <manifest>
+                <attribute name="Main-Class" value="com.principal.Orquestador"/>
+            </manifest>
+        </jar>
+    </target>
+</project>
+

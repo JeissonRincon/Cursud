@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- =======================Core -Sandro-================================ -->
+<project name="1.2 Core" default="Crear core.jar">
+    <description> Genera el jar del Core </description>
+	<!-- variables -->
+	<property name="base_core" location="D:\eclipseA\workspace\core"/>
+	<property name="destino_core" location="D:\eclipseA\workspace\orquestador\back\core.jar"/>
+	<!--   corear   -->
+    <target name="Crear core.jar" description="crea el core.jar">
+    	 <jar destfile="${destino_core}"  basedir="${base_core}\bin" manifest="${base_core}\MANIFEST.MF"/>       
+    </target>
+</project>
+

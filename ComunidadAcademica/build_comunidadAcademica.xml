@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- =======================comunidadAcademica -Sandro-================================ -->
+<project name="1.2 comunidadAcademica" default="Crear comunidadAcademica.jar">
+    <description> Genera el jar del comunidadAcademica </description>
+	<!-- variables -->
+	<property name="base_comunidadAcademica" location="C:\Users\TOSHIBA\eclipse-workspace\workspace\ComunidadAcademica"/>
+	<property name="destino_comunidadAcademica" location="C:\Users\TOSHIBA\eclipse-workspace\workspace\Cursud\back\comunidadAcademica.jar"/>
+	<!--   corear   -->
+    <target name="Crear comunidadAcademica.jar" description="crea el comunidadAcademica.jar">
+    	 <jar destfile="${destino_comunidadAcademica}"  basedir="${base_comunidadAcademica}\bin" manifest="${base_comunidadAcademica}\MANIFEST.MF"/>       
+    </target>
+</project>
+

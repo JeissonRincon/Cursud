@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ======================GUI -Sandro-=================================== -->
+<project name="1.3 GUI" default="Crear GUI.jar">
+    <description> Genera el jar de la GUI </description>
+	<!-- variables -->
+	<property name="base_gui" location="c:\eclipsec\workspace\gui"/>
+	<property name="destino_gui" location="c:\eclipsec\workspace\orquestador\front\gui.jar"/>
+	<!--   guiar   -->
+    <target name="Crear GUI.jar" description="crea el GUI.jar">
+    	<jar destfile="${destino_gui}"  basedir="${base_gui}\bin" manifest="${base_gui}\MANIFEST.MF"/>
+    </target>
+</project>
+

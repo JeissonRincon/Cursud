@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- =======================interfazComunidad -Sandro-================================ -->
+<project name="1.2 interfazComunidad" default="Crear interfazComunidad.jar">
+    <description> Genera el jar del interfazComunidad </description>
+	<!-- variables -->
+	<property name="base_interfazComunidad" location="C:\Users\TOSHIBA\eclipse-workspace\workspace\InterfazComunidad"/>
+	<property name="destino_interfazComunidad" location="C:\Users\TOSHIBA\eclipse-workspace\workspace\Cursud\front\interfazComunidad.jar"/>
+	<!--   corear   -->
+    <target name="Crear interfazComunidad.jar" description="crea el interfazComunidad.jar">
+    	 <jar destfile="${destino_interfazComunidad}"  basedir="${base_interfazComunidad}\bin" manifest="${base_interfazComunidad}\MANIFEST.MF"/>       
+    </target>
+</project>
+

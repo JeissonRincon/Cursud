@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- =======================cursud -Sandro-========================== -->
+<project name="1.4 cursud" default="Crear cursud.jar">
+    <description> Genera el jar del cursud </description>
+	<!-- variables -->
+	<property name="dir_api" location="C:\Users\TOSHIBA\eclipse-workspace\workspace\api\bin"/>
+	<property name="base_cursud" location="C:\Users\TOSHIBA\eclipse-workspace\workspace\Cursud\bin"/>
+	<!-- orquestar -->
+    <target name="Crear cursud.jar" description="crea el cursud.jar">
+    	<jar destfile="cursud.jar"  basedir="${base_cursud}">
+        <fileset dir="${dir_api}"/>
+            <manifest>
+                <attribute name="Main-Class" value="app.App"/>
+            </manifest>
+        </jar>
+    </target>
+</project>
+

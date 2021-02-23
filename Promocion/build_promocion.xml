@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- =======================promocion -Sandro-================================ -->
+<project name="1.2 promocion" default="Crear promocion.jar">
+    <description> Genera el jar del Core </description>
+	<!-- variables -->
+	<property name="base_promocion" location="C:\Users\TOSHIBA\eclipse-workspace\workspace\Promocion"/>
+	<property name="destino_promocion" location="C:\Users\TOSHIBA\eclipse-workspace\workspace\Cursud\front\promocion.jar"/>
+	<!--   corear   -->
+    <target name="Crear promocion.jar" description="crea el promocion.jar">
+    	 <jar destfile="${destino_promocion}"  basedir="${base_promocion}\bin" manifest="${base_promocion}\MANIFEST.MF"/>       
+    </target>
+</project>
+

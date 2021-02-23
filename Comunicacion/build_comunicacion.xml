@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- =======================Core -Sandro-================================ -->
+<project name="1.2 comunicacion" default="Crear comunicacion.jar">
+    <description> Genera el jar del Core </description>
+	<!-- variables -->
+	<property name="base_comunicacion" location="C:\Users\TOSHIBA\eclipse-workspace\workspace\Comunicacion"/>
+	<property name="destino_comunicacion" location="C:\Users\TOSHIBA\eclipse-workspace\workspace\Cursud\front\Comunicacion.jar"/>
+	<!--   corear   -->
+    <target name="Crear comunicacion.jar" description="crea el comunicacion.jar">
+    	 <jar destfile="${destino_comunicacion}"  basedir="${base_comunicacion}\bin" manifest="${base_comunicacion}\MANIFEST.MF"/>       
+    </target>
+</project>
+
